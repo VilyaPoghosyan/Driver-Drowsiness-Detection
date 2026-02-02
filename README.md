@@ -23,3 +23,20 @@ Tech Stack
 * Face Analysis: MediaPipe Face Landmarker
 * Key Concepts: CNNs, real-time inference, temporal smoothing, geometric eye metrics (EAR), threshold-based alerting
 
+Installation & Usage
+
+Clone the repository:
+git clone https://github.com/VilyaPoghosyan/Driver-Drowsiness-Detection.git
+cd Driver-Drowsiness-Detection
+
+Install dependencies:
+pip install -r requirements.txt
+
+Run the detection script:
+python drowsiness_detect.py
+
+Configuration Options: 
+Adjust thresholds for EAR and yawning detection, temporal smoothing lengths, model paths, and alarm sound via config.py.
+
+License
+This project is licensed under the MIT License – see the LICENSE file for details.
