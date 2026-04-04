@@ -6,7 +6,6 @@ MOUTH_IDX = [
     61, 146, 91, 181, 84, 17,
     314, 405, 321, 375, 291, 308, 78
 ]
-
 def preprocess_mouth(img):
     if img is None or img.size == 0:
         return None
