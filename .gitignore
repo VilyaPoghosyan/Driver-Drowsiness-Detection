@@ -1,5 +1,32 @@
+# Dataset folders (never upload raw data to GitHub) 
+data/
+dataset/
+datasets/
+*.csv
+
+# Model checkpoints (large binary files) 
+# Comment out the line below if you WANT to keep mouth_cnn.h5 on GitHub
+# mouth_cnn.h5
+baseline_cnn_best.h5
+
+# Python cache 
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments 
+venv/
+env/
+.env/
+.venv/
+
+# OS files 
 .DS_Store
+Thumbs.db
 
-
+# IDE files 
+.vscode/
+.idea/
+*.swp

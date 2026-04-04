@@ -1,6 +1,17 @@
-opencv-python
-mediapipe
-numpy
-tensorflow
-pygame
+# Core deep learning
+tensorflow>=2.12.0
 
+# Computer vision
+opencv-python>=4.7.0
+mediapipe>=0.10.0
+
+# Data & numerics
+numpy>=1.23.0
+
+# Audio alerts
+pygame>=2.1.0
+
+# Training & evaluation (used in train.py)
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+seaborn>=0.12.0

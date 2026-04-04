@@ -3,9 +3,10 @@ IMG_SIZE = 80
 # Yawning
 YAWN_THRESHOLD = 0.5
 
+
 # Eye (EAR)
 EAR_THRESHOLD = 0.23
-CLOSED_EYE_SECONDS = 1.8
+CLOSED_EYE_SECONDS = 1.8 
 
 # Temporal smoothing
 EAR_HISTORY = 7
