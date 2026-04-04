@@ -33,7 +33,6 @@ mouth_history = deque(maxlen=MOUTH_HISTORY)
 eye_closed_start = None
 prev_time = time.time()
 
-
 cap = cv2.VideoCapture(0)
 
 while cap.isOpened():
