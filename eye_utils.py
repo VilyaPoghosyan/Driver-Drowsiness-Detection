@@ -11,6 +11,6 @@ def eye_aspect_ratio(eye_points):
 
     A = dist(eye_points[1], eye_points[5])
     B = dist(eye_points[2], eye_points[4])
-    C = dist(eye_points[0], eye_points[3])
+    C = dist(eye_points[0], eye_points[3]) 
 
     return (A + B) / (2.0 * C)
