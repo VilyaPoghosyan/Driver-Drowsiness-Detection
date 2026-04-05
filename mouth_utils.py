@@ -6,9 +6,14 @@ MOUTH_IDX = [
     61, 146, 91, 181, 84, 17,
     314, 405, 321, 375, 291, 308, 78
 ]
+
 def preprocess_mouth(img):
     if img is None or img.size == 0:
         return None
+    # Normalize brightness using CLAHE
+    img_yuv = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
+    img_yuv[:,:,0] = cv2.createCLAHE(clipLimit=2.0).apply(img_yuv[:,:,0])
+    img = cv2.cvtColor(img_yuv, cv2.COLOR_YUV2BGR)
     img = cv2.resize(img, (IMG_SIZE, IMG_SIZE))
     img = img / 255.0
     return img.reshape(1, IMG_SIZE, IMG_SIZE, 3)
